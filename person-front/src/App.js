@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 
+const baseURL = process.env.API_HOST || "http://localhost:8080";
+
 const axios = require("axios").create({
-  baseURL: "http://localhost:8080",
+  baseURL: baseURL,
 });
 
 class App extends Component {
