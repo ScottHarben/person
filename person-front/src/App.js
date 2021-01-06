@@ -161,7 +161,7 @@ class App extends Component {
             </div>
           </div>
           <button type="submit" className="btn btn-primary">
-            Submit
+            Boom!
           </button>
         </form>
         <table className="table mt-5">
