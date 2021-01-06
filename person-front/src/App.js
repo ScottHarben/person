@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-const baseURL = "http://localhost:8080";
+const baseURL = "http://104.131.91.26:8080";
 
 const axios = require("axios").create({
   baseURL: baseURL,
