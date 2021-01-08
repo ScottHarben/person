@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-const baseURL = "http://person-app.site/api";
+const baseURL = "http://demo.person-app.site/api";
 
 const axios = require("axios").create({
   baseURL: baseURL,
