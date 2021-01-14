@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-const baseURL = "http://167.172.20.70:8080";
+const baseURL = "https://api.person-app.site";
 
 const axios = require("axios").create({
   baseURL: baseURL,
@@ -161,7 +161,7 @@ class App extends Component {
             </div>
           </div>
           <button type="submit" className="btn btn-primary">
-            2nd time is the charm!
+            3rd time is the charm!
           </button>
         </form>
         <table className="table mt-5">
