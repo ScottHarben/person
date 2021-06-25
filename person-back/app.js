@@ -9,11 +9,7 @@ const port = process.env.PORT || 9000;
 const app = express();
 
 var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  database: "Person",
-  user: "superuser",
-  password: "superuser",
+  
 });
 
 connection.connect();
@@ -89,14 +85,14 @@ async function sendEmail(req, res) {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: "apikey", //ENV
+      user: "", //ENV
       pass:
-        "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", //ENV
+        "", //ENV
     },
   });
   try {
     await transporter.sendMail({
-      from: '"Scott Harben" <scottharben@gmail.com>', // ENV
+      from: '', // ENV
       to: email,
       subject: "Account Verification", // Subject line
       html:
